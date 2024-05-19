@@ -9,7 +9,7 @@
     "test": "ng test",
     "serve:ssr:atlas": "node dist/atlas/server/server.mjs",
     "ci:clean": "rimraf ./dist",
-    "ci:build": "ng build --configuration development"
+    "ci:build": "ng build --configuration production"
   },
   "private": true,
   "dependencies": {
