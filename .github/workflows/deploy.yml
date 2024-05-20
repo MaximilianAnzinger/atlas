@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - chore/deployment
 
 env:
   node: 20
@@ -28,7 +29,7 @@ jobs:
 
       - name: Clean Distribution Directory
         run: npm run ci:clean
-        
+
       - name: Build Application
         run: npm run ci:build
 
