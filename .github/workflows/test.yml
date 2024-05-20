@@ -1,0 +1,69 @@
+name: Test
+
+on:
+  pull_request:
+    paths-ignore:
+      - 'README.md'
+      - 'CODE_OF_CONDUCT.md'
+      - 'CONTRIBUTING.md'
+      - 'LICENSE'
+      - 'SECURITY.md'
+      - 'docs/**'
+      - '.github/**'
+      - '!.github/workflows/test.yml'
+  push:
+    branches:
+      - develop
+      - main
+      - release/*
+    tags: '[0-9]+.[0-9]+.[0-9]+'
+    paths-ignore:
+      - 'README.md'
+      - 'CODE_OF_CONDUCT.md'
+      - 'CONTRIBUTING.md'
+      - 'LICENSE'
+      - 'SECURITY.md'
+      - 'docs/**'
+      - '.github/**'
+      - '!.github/workflows/test.yml'
+  release:
+    types:
+      - created
+
+env:
+  node: 20
+
+jobs:
+
+  style:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '${{ env.node }}'
+          cache: 'npm'
+      - name: Install Dependencies
+        run: npm install
+      - name: TypeScript Formatting
+        run: npm run prettier:check
+      - name: TypeScript Code Style
+        run: npm run lint
+        if: success() || failure()
+
+  compilation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '${{ env.node }}'
+          cache: 'npm'
+      - name: Install Dependencies
+        run: npm install
+      - name: Compile TypeScript Files With Typechecking
+        run: npm run compile:ts
