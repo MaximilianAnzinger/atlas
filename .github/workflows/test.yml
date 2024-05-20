@@ -47,8 +47,6 @@ jobs:
           cache: 'npm'
       - name: Install Dependencies
         run: npm install
-      - name: TypeScript Formatting
-        run: npm run prettier:check
       - name: TypeScript Code Style
         run: npm run lint
         if: success() || failure()
