@@ -11,7 +11,9 @@
     "ci:clean": "rimraf ./dist",
     "ci:build": "ng build --configuration production",
     "lint": "ng lint",
-    "lint:fix": "ng lint --fix"
+    "lint:fix": "ng lint --fix",
+    "prettier:write": "prettier --write \"src/**/*.{json,ts,js,css,scss,html}\"",
+    "prettier:check": "prettier --check \"src/**/*.{json,ts,js,css,scss,html}\""
   },
   "private": true,
   "dependencies": {
@@ -55,6 +57,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "prettier": "^3.2.5",
     "typescript": "~5.4.2"
   }
 }
