@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - chore/deployment
 
 env:
   node: 20
