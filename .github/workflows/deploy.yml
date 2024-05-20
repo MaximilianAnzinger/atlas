@@ -39,5 +39,5 @@ jobs:
           server: atlas-al.de
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /test/
+          server-dir: /httpdocs/
           local-dir: ./dist/
