@@ -14,7 +14,7 @@
     "lint:fix": "ng lint --fix",
     "prettier:write": "prettier --write \"src/**/*.{json,ts,js,css,scss,html}\"",
     "prettier:check": "prettier --check \"src/**/*.{json,ts,js,css,scss,html}\"",
-    "compile:ts": "npm run prebuild && tsc --project tsconfig.app.json"
+    "compile:ts": "tsc --project tsconfig.app.json"
   },
   "private": true,
   "dependencies": {
