@@ -17,7 +17,7 @@ jobs:
       - name: 🚚 Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js environment
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.node }}
@@ -28,7 +28,7 @@ jobs:
 
       - name: Clean Distribution Directory
         run: npm run ci:clean
-        
+
       - name: Build Application
         run: npm run ci:build
 
@@ -38,5 +38,5 @@ jobs:
           server: atlas-al.de
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /
-          local-dir: ./dist/
+          server-dir: /httpdocs/
+          local-dir: ./dist/atlas/browser/
