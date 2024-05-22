@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+<nav class="navbar navbar-expand-sm bg-dark">
     <a class="navbar-brand px-3" href="#">
         <img ngSrc="assets/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="" />
         Atlas
@@ -19,7 +19,7 @@
         <ul class="nav nav-fill navbar-nav mr-0 mt-2 mt-lg-0 w-100">
             @for (navItem of navItems; track navItem.displayName) {
                 <li class="nav-item">
-                    <a class="nav-link" href="#">{{ navItem.displayName }}</a>
+                    <a class="nav-link text-danger" href="#">{{ navItem.displayName }}</a>
                 </li>
             }
         </ul>
