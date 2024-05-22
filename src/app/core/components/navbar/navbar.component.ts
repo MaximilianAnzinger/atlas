@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 
 interface NavItem {
     displayName: string;
@@ -6,6 +7,8 @@ interface NavItem {
 
 @Component({
     selector: 'app-navbar',
+    standalone: true,
+    imports: [NgOptimizedImage],
     templateUrl: './navbar.component.html',
     styleUrl: './navbar.component.scss',
 })
