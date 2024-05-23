@@ -1,4 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
-/* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+$light:      #fffff8;
+$dark:       #2920ac;
+$primary:    #ffb805;
+$secondary:  #43e8d8;
+$info:       #86d1ef;
+$success:    #67dd00;
+$warning:    #ffd295;
+$danger:     #ff336d;
+
+$theme-colors: (
+  "light": $light,
+  "dark": $dark,
+  "primary": $primary,
+  "secondary": $secondary,
+  "info": $info,
+  "success": $success,
+  "warning": $warning,
+  "danger": $danger
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
