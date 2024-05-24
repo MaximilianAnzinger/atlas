@@ -1,0 +1,11 @@
+<div class="card m-1 h-100">
+    <div class="card-body">
+        <i class="bi {{ bsIconClass() }} icon-large"></i>
+        @if (title()) {
+            <h5 class="card-title mt-4">{{ title() }}</h5>
+        }
+        @if (body()) {
+            <p class="card-text">{{ body() }}</p>
+        }
+    </div>
+</div>
