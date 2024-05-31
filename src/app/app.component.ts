@@ -5,6 +5,7 @@ import { IconCardComponent } from './shared/components/icon-card/icon-card.compo
 import { Contributor } from './shared/models/contributor';
 import { Category } from './shared/enums/category';
 import { ContributorCardComponent } from './shared/components/contributor-card/contributor-card.component';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
     selector: 'app-root',
@@ -38,4 +39,6 @@ export class AppComponent {
             categories: [Category.StandardizedCompetencies],
         },
     ];
+
+    protected readonly faCoffee = faCoffee;
 }
