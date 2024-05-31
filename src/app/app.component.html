@@ -1,7 +1,64 @@
-<!-- TODO Remove -->
-<app-navbar></app-navbar>
-<div class="">
-    <app-icon-card class="h-100" bsIconClass="bi-caret-down-square-fill" title="Some Title" body="This is some arbitrarily long body" />
+<div class="row vh-50 m-0">
+    <div class="col p-1">
+        <app-icon-card bsIconClass="bi-rocket-takeoff" title="Atlas" body="Main Atlas Banner" />
+    </div>
+</div>
+<div class="row vh-50 m-0">
+    <div class="col-4 p-1">
+        <app-icon-card bsIconClass="bi-flower3" title="Main Features" body="ABC" />
+    </div>
+    <div class="col-8 p-1">
+        <app-icon-card bsIconClass="bi-rocket-takeoff" title="Artemis" body="Artemis summary" />
+    </div>
+</div>
+<div class="row m-0">
+    <div class="col-6 p-0">
+        <div class="row m-0">
+            <div class="col-12 p-1"><app-icon-card bsIconClass="bi-caret-down-square-fill" title="Research Design" body="Research Design" /></div>
+        </div>
+        <div class="row m-0">
+            <div class="col-4 p-1"><app-icon-card bsIconClass="bi-caret-down-square-fill" title="Github" /></div>
+            <div class="col-4 p-1"><app-icon-card bsIconClass="bi-caret-down-square-fill" title="Courses" /></div>
+            <div class="col-4 p-1"><app-icon-card bsIconClass="bi-caret-down-square-fill" title="Users" /></div>
+        </div>
+        <div class="row m-0">
+            <div class="col-12 p-1"><app-icon-card bsIconClass="bi-caret-down-square-fill" title="TODO" body="TODO" /></div>
+        </div>
+    </div>
+    <div class="col-6 p-0">
+        <div class="row m-0">
+            <div class="col-7 p-1"><app-icon-card bsIconClass="bi-caret-down-square-fill" title="Learning Path Generation" body="TODO" /></div>
+            <div class="col-5 p-1"><app-icon-card bsIconClass="bi-caret-down-square-fill" title="TODO" body="TODO" /></div>
+        </div>
+        <div class="row m-0">
+            <div class="col-5 p-1"><app-icon-card bsIconClass="bi-caret-down-square-fill" title="TODO" body="TODO" /></div>
+            <div class="col-7 p-1"><app-icon-card bsIconClass="bi-caret-down-square-fill" title="Competencies" body="TODO" /></div>
+        </div>
+    </div>
 </div>
 
-<router-outlet />
+<!-- contributors -->
+<div class="row row-cols-1 row-cols-sm-3 row-cols-md-5 m-0">
+    <div class="col p-1"><app-icon-card bsIconClass="bi-person-bounding-box" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
+    <div class="col p-1"><app-icon-card bsIconClass="bi-person-bounding-box" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
+    <div class="col p-1"><app-icon-card bsIconClass="bi-person-bounding-box" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
+    <div class="col p-1"><app-icon-card bsIconClass="bi-person-bounding-box" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
+    <div class="col p-1"><app-icon-card bsIconClass="bi-person-bounding-box" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
+    <div class="col p-1"><app-icon-card bsIconClass="bi-person-bounding-box" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
+    <div class="col p-1"><app-icon-card bsIconClass="bi-person-bounding-box" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
+    <div class="col p-1"><app-icon-card bsIconClass="bi-person-bounding-box" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
+    <div class="col p-1"><app-icon-card bsIconClass="bi-person-bounding-box" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
+    <div class="col p-1"><app-icon-card bsIconClass="bi-person-bounding-box" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
+    <div class="col p-1"><app-icon-card bsIconClass="bi-person-bounding-box" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
+    <div class="col p-1"><app-icon-card bsIconClass="bi-person-bounding-box" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
+</div>
+
+<div class="row row-cols-1 row-cols-sm-3 row-cols-md-5 m-0">
+    @for (contributor of contributors; track contributor) {
+        <div class="col p-1">
+            <app-contributor-card [contributor]="contributor" />
+        </div>
+    }
+</div>
+
+<!-- <router-outlet /> -->
