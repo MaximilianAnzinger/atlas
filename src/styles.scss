@@ -1,6 +1,6 @@
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
 
 $light:      #fffff8;
 $dark:       #2920ac;
@@ -22,4 +22,12 @@ $theme-colors: (
   "danger": $danger
 );
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
+
+.vh-25 {
+  height: 25vh !important;
+}
+
+.vh-50 {
+  height: 50vh !important;
+}

@@ -1,0 +1,20 @@
+<div class="card h-100">
+    <div class="card-body">
+        <!-- image -->
+        @if (contributor().imgSrc) {
+            <div class="circular-image-container">
+                <img ngSrc="{{ contributor().imgSrc }}" class="circular-image" alt="Alt Text TODO" width="1000" height="1000" />
+            </div>
+        } @else {
+            <fa-icon class="fa-3x" [icon]="faImagePortrait"></fa-icon>
+        }
+
+        <!-- name -->
+        <h5 class="card-title mt-4">{{ contributor().titlePrefix || '' }} {{ contributor().firstName }} {{ contributor().lastName }} {{ contributor().titleSuffix || '' }}</h5>
+
+        <!-- categories -->
+        @for (category of contributor().categories; track category) {
+            <p class="card-text">{{ category }}</p>
+        }
+    </div>
+</div>

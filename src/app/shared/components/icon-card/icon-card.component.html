@@ -1,0 +1,11 @@
+<div class="card h-100">
+    <div class="card-body">
+        <fa-icon class="fa-3x" [icon]="faIcon()"></fa-icon>
+        @if (title()) {
+            <h5 class="card-title mt-4">{{ title() }}</h5>
+        }
+        @if (body()) {
+            <p class="card-text">{{ body() }}</p>
+        }
+    </div>
+</div>
