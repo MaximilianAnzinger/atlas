@@ -31,3 +31,11 @@ $theme-colors: (
 .vh-50 {
   height: 50vh !important;
 }
+
+.atlas-gradient-bg-card {
+  overflow: hidden;
+}
+
+.atlas-bg-gradient {
+  background: linear-gradient(135deg, $dark 0%, 30%, $secondary 100%) !important;
+}

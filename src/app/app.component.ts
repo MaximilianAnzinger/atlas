@@ -6,11 +6,12 @@ import { Contributor } from './shared/models/contributor';
 import { Category } from './shared/enums/category';
 import { ContributorCardComponent } from './shared/components/contributor-card/contributor-card.component';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { LearningPathSsdComponent } from './learning-path-ssd/learning-path-ssd.component';
 
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [RouterOutlet, NavbarComponent, IconCardComponent, ContributorCardComponent],
+    imports: [RouterOutlet, NavbarComponent, IconCardComponent, ContributorCardComponent, LearningPathSsdComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
 })
