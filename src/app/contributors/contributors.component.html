@@ -1,0 +1,16 @@
+<div class="card overflow-hidden text-light">
+    <div class="atlas-bg-gradient w-100 h-100">
+        <div class="card-body">
+            <h3 class="card-title text-center mt-4">Contributors</h3>
+            <p class="card-text text-center">Atlas is a collaboration of many great minds.</p>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 m-5">
+                @for (contributor of contributors; track contributor) {
+                    <div class="col p-1">
+                        <app-contributor-card [contributor]="contributor" />
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

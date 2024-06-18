@@ -1,4 +1,5 @@
 import { Category } from '../enums/category';
+import { Role } from '../enums/role';
 
 export interface Contributor {
     firstName: string;
@@ -7,4 +8,5 @@ export interface Contributor {
     titleSuffix?: string;
     imgSrc?: string;
     categories: Category[];
+    role: Role;
 }

@@ -1,0 +1,16 @@
+// Category colors and styles
+
+$learning-path-generation-color : #2029ac;
+$standardized-competencies-color : #20ac86;
+$category-color1 : #20ac86;
+$category-color3 : #9C528B;
+$category-color4 : #BA3B46;
+$category-color6 : #E1E2EF;
+
+.bg-learning-path-generation {
+  background-color: $learning-path-generation-color;
+}
+
+.bg-standardized-competencies {
+  background-color: $standardized-competencies-color;
+}

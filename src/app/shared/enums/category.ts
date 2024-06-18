@@ -1,4 +1,4 @@
 export enum Category {
-    LPGeneration,
-    StandardizedCompetencies,
+    LPGeneration = 'Learning Path Generation',
+    StandardizedCompetencies = 'Standardized Competencies',
 }

@@ -37,33 +37,15 @@
     </div>
 </div>
 
-<!-- contributors -->
-<div class="row row-cols-1 row-cols-sm-3 row-cols-md-5 m-0">
-    <div class="col p-1"><app-icon-card [faIcon]="faCoffee" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
-    <div class="col p-1"><app-icon-card [faIcon]="faCoffee" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
-    <div class="col p-1"><app-icon-card [faIcon]="faCoffee" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
-    <div class="col p-1"><app-icon-card [faIcon]="faCoffee" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
-    <div class="col p-1"><app-icon-card [faIcon]="faCoffee" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
-    <div class="col p-1"><app-icon-card [faIcon]="faCoffee" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
-    <div class="col p-1"><app-icon-card [faIcon]="faCoffee" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
-    <div class="col p-1"><app-icon-card [faIcon]="faCoffee" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
-    <div class="col p-1"><app-icon-card [faIcon]="faCoffee" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
-    <div class="col p-1"><app-icon-card [faIcon]="faCoffee" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
-    <div class="col p-1"><app-icon-card [faIcon]="faCoffee" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
-    <div class="col p-1"><app-icon-card [faIcon]="faCoffee" title="Carlos Contributor" body="Category A, Category B, Category C" /></div>
-</div>
-
-<div class="row row-cols-1 row-cols-sm-3 row-cols-md-5 m-0">
-    @for (contributor of contributors; track contributor) {
-        <div class="col p-1">
-            <app-contributor-card [contributor]="contributor" />
-        </div>
-    }
+<div class="row m-0">
+    <div class="col p-1">
+        <app-learning-path-ssd />
+    </div>
 </div>
 
 <div class="row m-0">
     <div class="col p-1">
-        <app-learning-path-ssd />
+        <app-contributors />
     </div>
 </div>
 

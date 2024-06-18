@@ -1,6 +1,6 @@
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
 $light:      #fffff8;
 $dark:       #2920ac;
@@ -22,7 +22,7 @@ $theme-colors: (
   "danger": $danger
 );
 
-@import "bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 .vh-25 {
   height: 25vh !important;
@@ -32,10 +32,14 @@ $theme-colors: (
   height: 50vh !important;
 }
 
-.atlas-gradient-bg-card {
-  overflow: hidden;
-}
-
 .atlas-bg-gradient {
   background: linear-gradient(135deg, $dark 0%, 30%, $secondary 100%) !important;
 }
+
+.atlas-card-glass-morphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-color: rgba($light, 0.2);
+}
+
+@import "styles/categories";
