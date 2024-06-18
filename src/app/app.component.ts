@@ -7,39 +7,17 @@ import { Category } from './shared/enums/category';
 import { ContributorCardComponent } from './shared/components/contributor-card/contributor-card.component';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { LearningPathSsdComponent } from './learning-path-ssd/learning-path-ssd.component';
+import { ContributorsComponent } from './contributors/contributors.component';
 
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [RouterOutlet, NavbarComponent, IconCardComponent, ContributorCardComponent, LearningPathSsdComponent],
+    imports: [RouterOutlet, NavbarComponent, IconCardComponent, ContributorCardComponent, LearningPathSsdComponent, ContributorsComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
 })
 export class AppComponent {
     title = 'atlas';
-    contributors: Contributor[] = [
-        {
-            firstName: 'John',
-            lastName: 'Doe',
-            titlePrefix: 'Dr.',
-            titleSuffix: 'PhD',
-            imgSrc: 'https://avatars.githubusercontent.com/u/44003963?v=4',
-            categories: [Category.LPGeneration, Category.StandardizedCompetencies],
-        },
-        {
-            firstName: 'Jane',
-            lastName: 'Doe',
-            titlePrefix: 'Dr.',
-            titleSuffix: 'PhD',
-            imgSrc: 'https://avatars.githubusercontent.com/u/44003963?v=4',
-            categories: [Category.LPGeneration],
-        },
-        {
-            firstName: 'John',
-            lastName: 'Doe',
-            categories: [Category.StandardizedCompetencies],
-        },
-    ];
 
     protected readonly faCoffee = faCoffee;
 }
