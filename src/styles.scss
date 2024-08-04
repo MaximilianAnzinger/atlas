@@ -58,4 +58,11 @@ $theme-colors: (
   border-color: rgba($light, 0.2);
 }
 
+.icon-link-glass-morphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: var(--bs-card-border-width) solid rgba($light, 0.2);
+  border-radius: 50em;
+}
+
 @import "styles/categories";
